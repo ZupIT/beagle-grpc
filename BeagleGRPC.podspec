@@ -27,13 +27,9 @@ Pod::Spec.new do |s|
 
   s.swift_version = '5.2'
   s.ios.deployment_target = '10.0'
-  s.source = { :git => 'https://github.com/ZupIT/beagle-helpers.git', :tag => s.version }
+  s.source = { :git => 'https://github.com/ZupIT/beagle-grpc.git', :tag => s.version }
 
   s.source_files = 'ios/Sources/*.swift'
-
-  s.subspec 'Proto' do |ss|
-    ss.source_files = 'ios/Sources/Proto/*.swift'
-  end
 
   s.dependency 'Beagle', '>= 1.7.0', '< 2.0.0'
   s.dependency 'gRPC-Swift', '>= 1.0.0', '< 2.0.0'

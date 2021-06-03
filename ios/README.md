@@ -14,9 +14,9 @@ How to generate the code:
 ```bash
 protoc {messages,screen}.proto \
   --proto_path=../backend/src/main/proto \
-  --swift_out=Sources/Proto \
+  --swift_out=Sources \
   --swift_opt=Visibility=Public \
-  --grpc-swift_out=Sources/Proto \
+  --grpc-swift_out=Sources \
   --grpc-swift_opt=Visibility=Public,Client=true,TestClient=true,Server=false
 ```
 

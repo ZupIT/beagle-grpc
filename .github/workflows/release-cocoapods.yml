@@ -1,0 +1,30 @@
+name: Publish to CocoaPods
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  cocoapod-release:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Read secrets from AWS Secrets Manager
+        uses: abhilash1in/aws-secrets-manager-action@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+          parse-json: true
+          secrets: |
+            beagle/core/*
+
+      - name: Install CocoaPods
+        run: gem install cocoapods
+
+      - name: Push to trunk
+        env:
+          COCOAPODS_TRUNK_TOKEN: ${{ env.BEAGLE_CORE_ARTIFACT_COCOAPODS_TRUNK_TOKEN }}
+        run: pod trunk push BeagleGRPC.podspec --allow-warnings
