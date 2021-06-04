@@ -1,0 +1,22 @@
+name: iOS Pull Request
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'ios/**'
+  pull_request:
+    paths:
+      - 'ios/**'
+
+jobs:
+  test-beagle-grpc-ios:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Test Beagle gRPC iOS
+      run: |
+        xcodebuild -scheme "beagle-grpc" test \
+          -sdk "iphonesimulator" \
+          -destination "platform=iOS Simulator,name=iPhone 12"
