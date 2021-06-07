@@ -9,7 +9,7 @@ Package.resolved
 # Kotlin
 HELP.md
 target/
-build/
+**/build/
 ../out/
 **/.gradle/
 **/.idea/*

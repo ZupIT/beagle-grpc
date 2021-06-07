@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="br.com.zup.grpc.BeagleGrpcUtilTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-07T19:03:50" hostname="zup" time="0.606">
-  <properties/>
-  <testcase name="Assert that asGrpcView() returns a ViewNode gRPC DTO message based on Beagle JSON()" classname="br.com.zup.grpc.BeagleGrpcUtilTest" time="0.606"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
