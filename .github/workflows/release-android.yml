@@ -2,7 +2,7 @@ name: Beagle Release
 
 on:
   workflow_run:
-    workflows: [ "Beagle Yoga Release" ]
+    workflows: [ "Beagle gRPC Android Release" ]
     types:
       - completed
 jobs:
