@@ -11,7 +11,7 @@ HELP.md
 target/
 build/
 ../out/
-.gradle/
+**/.gradle/
 **/.idea/*
 !**/.idea/copyright
 projectFilesBackup/
