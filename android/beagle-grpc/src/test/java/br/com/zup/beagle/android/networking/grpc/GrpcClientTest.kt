@@ -252,7 +252,5 @@ class GrpcClientTest {
             assertEquals(viewNodeString, String(successResponseData?.data!!))
 
         }
-
-        // TODO: Parse Response - Headers
     }
 }
