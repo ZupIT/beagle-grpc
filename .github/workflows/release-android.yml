@@ -1,10 +1,8 @@
-name: Beagle Release
+name: Beagle Android Release
 
 on:
-  workflow_run:
-    workflows: [ "Beagle gRPC Android Release" ]
-    types:
-      - completed
+  workflow_dispatch:
+
 jobs:
   generate-release:
     name: Generate release
