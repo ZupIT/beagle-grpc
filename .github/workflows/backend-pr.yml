@@ -1,0 +1,27 @@
+name: Backend Pull Request build check
+
+on:
+    push:
+        branches:
+            - main
+        paths:
+            - 'backend/**'
+    pull_request:
+        branches: 
+            - main
+        paths:
+            - 'backend/**'
+            
+jobs:
+    pr-verification:
+        name: PR Check
+        runs-on: ubuntu-latest
+        steps:
+            -   uses: actions/checkout@v2
+                
+            -   name: Setup JDK 11
+                run: echo "JAVA_HOME=$JAVA_HOME_11_X64" >> $GITHUB_ENV
+
+            -   name: check
+                working-directory: backend
+                run: ./gradlew clean check
