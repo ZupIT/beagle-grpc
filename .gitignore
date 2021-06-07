@@ -12,7 +12,7 @@ target/
 **/build/
 ../out/
 **/.gradle/
-**/.idea/*
+/.idea/
 !**/.idea/copyright
 projectFilesBackup/
 out/
