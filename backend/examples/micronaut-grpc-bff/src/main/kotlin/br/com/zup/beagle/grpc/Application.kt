@@ -1,4 +1,4 @@
-package br.com.zup.beagle
+package br.com.zup.beagle.grpc
 
 import io.micronaut.runtime.Micronaut.*
 

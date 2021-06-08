@@ -1,9 +1,9 @@
-package br.com.zup.grpc
+package br.com.zup.beagle.grpc
 
 import beagle.Messages
 import br.com.zup.beagle.serialization.jackson.BeagleSerializationUtil
 import br.com.zup.beagle.widget.layout.Screen
-import br.com.zup.grpc.exception.BeagleException
+import br.com.zup.beagle.grpc.exception.BeagleException
 import com.fasterxml.jackson.annotation.JsonInclude
 
 private fun asJsonString(value: Any): String {

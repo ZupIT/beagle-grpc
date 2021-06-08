@@ -1,6 +1,5 @@
-package br.com.zup.beagle.interceptor
+package br.com.zup.beagle.grpc.interceptor
 
-import br.com.zup.beagle.interceptor.BeagleHeadersInterceptor
 import io.grpc.ServerInterceptor
 import io.micronaut.context.annotation.Bean
 import io.micronaut.context.annotation.Factory

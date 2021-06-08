@@ -1,4 +1,4 @@
-package br.com.zup.grpc.exception
+package br.com.zup.beagle.grpc.exception
 
 import java.lang.RuntimeException
 

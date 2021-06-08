@@ -1,9 +1,9 @@
-package br.com.zup.grpc
+package br.com.zup.beagle.grpc
 
 import beagle.Messages
 import beagle.ScreenServiceGrpc
 import br.com.zup.beagle.widget.layout.ScreenBuilder
-import br.com.zup.grpc.exception.BeagleException
+import br.com.zup.beagle.grpc.exception.BeagleException
 import io.grpc.Status
 import io.grpc.stub.StreamObserver
 

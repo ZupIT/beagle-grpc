@@ -1,9 +1,10 @@
-package br.com.zup.grpc
+package grpc
 
 import br.com.zup.beagle.widget.layout.Container
 import br.com.zup.beagle.widget.layout.Screen
 import br.com.zup.beagle.widget.layout.ScreenBuilder
 import br.com.zup.beagle.widget.ui.Text
+import br.com.zup.beagle.grpc.asGrpcView
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 

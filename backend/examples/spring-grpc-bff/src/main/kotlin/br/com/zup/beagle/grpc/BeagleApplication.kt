@@ -1,4 +1,4 @@
-package br.com.zup.beagle
+package br.com.zup.beagle.grpc
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
