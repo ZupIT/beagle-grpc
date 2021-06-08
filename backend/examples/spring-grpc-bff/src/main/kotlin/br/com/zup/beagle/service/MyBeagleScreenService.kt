@@ -1,11 +1,11 @@
-package br.com.zup.grpcbff.service
+package br.com.zup.beagle.service
 
 import br.com.zup.beagle.widget.layout.ScreenBuilder
-import br.com.zup.grpcbff.interceptor.BeagleHeadersInterceptor
+import br.com.zup.beagle.interceptor.BeagleHeadersInterceptor
 import br.com.zup.grpc.BeagleScreenService
 import net.devh.boot.grpc.server.service.GrpcService
-import br.com.zup.grpcbff.screen.HomeScreen
-import br.com.zup.grpcbff.screen.SplashScreen
+import br.com.zup.beagle.screen.HomeScreen
+import br.com.zup.beagle.screen.SplashScreen
 
 @GrpcService(interceptors = [BeagleHeadersInterceptor::class])
 class MyBeagleAppService: BeagleScreenService() {

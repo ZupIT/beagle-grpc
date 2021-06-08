@@ -1,11 +1,11 @@
-package br.com.zup.grpcbff
+package br.com.zup.beagle
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class GrpcBffApplication
+class BeagleApplication
 
 fun main(args: Array<String>) {
-	runApplication<GrpcBffApplication>(*args)
+	runApplication<BeagleApplication>(*args)
 }

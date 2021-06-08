@@ -1,4 +1,4 @@
-package br.com.zup.grpcbff.interceptor
+package br.com.zup.beagle.interceptor
 
 import io.grpc.Context
 import io.grpc.Contexts

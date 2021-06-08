@@ -1,4 +1,4 @@
-package br.com.zup.screen
+package br.com.zup.beagle.screen
 
 import br.com.zup.beagle.core.CornerRadius
 import br.com.zup.beagle.core.Style

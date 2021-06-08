@@ -1,10 +1,10 @@
-package br.com.zup.service
+package br.com.zup.beagle.service
 
 import br.com.zup.beagle.widget.layout.ScreenBuilder
 import br.com.zup.grpc.BeagleScreenService
-import br.com.zup.interceptor.BeagleHeadersInterceptor
-import br.com.zup.screen.SplashScreen
-import br.com.zup.screen.HomeScreen
+import br.com.zup.beagle.interceptor.BeagleHeadersInterceptor
+import br.com.zup.beagle.screen.SplashScreen
+import br.com.zup.beagle.screen.HomeScreen
 import javax.inject.Singleton
 
 @Singleton

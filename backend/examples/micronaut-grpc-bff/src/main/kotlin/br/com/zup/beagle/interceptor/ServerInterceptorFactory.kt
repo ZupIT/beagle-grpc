@@ -1,5 +1,6 @@
-package br.com.zup.interceptor
+package br.com.zup.beagle.interceptor
 
+import br.com.zup.beagle.interceptor.BeagleHeadersInterceptor
 import io.grpc.ServerInterceptor
 import io.micronaut.context.annotation.Bean
 import io.micronaut.context.annotation.Factory
@@ -11,6 +12,6 @@ class ServerInterceptorFactory {
     @Bean
     @Singleton
     fun mySeverInterceptor(): ServerInterceptor {
-        return  OrderedServerInterceptor ( BeagleHeadersInterceptor(), 1 )
+        return  OrderedServerInterceptor(BeagleHeadersInterceptor(), 1)
     }
 }

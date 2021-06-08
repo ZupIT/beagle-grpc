@@ -1,4 +1,4 @@
-package br.com.zup.grpcbff
+package br.com.zup.beagle
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

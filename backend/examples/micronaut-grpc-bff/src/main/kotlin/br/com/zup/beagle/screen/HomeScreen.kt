@@ -1,4 +1,4 @@
-package br.com.zup.screen
+package br.com.zup.beagle.screen
 
 import br.com.zup.beagle.widget.layout.Container
 import br.com.zup.beagle.widget.layout.Screen

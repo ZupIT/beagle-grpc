@@ -1,4 +1,4 @@
-package br.com.zup.grpcbff.screen
+package br.com.zup.beagle.screen
 
 import br.com.zup.beagle.core.CornerRadius
 import br.com.zup.beagle.core.Style
@@ -29,7 +29,7 @@ class SplashScreen(private val headers: Map<String, String>) : ScreenBuilder {
                 createButton(
                     text = "Button with style",
                     style = Style(
-                        margin = EdgeValue(
+                            margin = EdgeValue(
                             top = 15.unitReal()
                         )
                     )
