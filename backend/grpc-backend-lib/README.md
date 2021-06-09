@@ -34,7 +34,7 @@ Maven example:
         ...
         <dependency>
             <groupId>br.com.zup.beagle</groupId>
-            <artifactId>grpc-backend</artifactId>
+            <artifactId>beagle-grpc-backend</artifactId>
             <version>1.0.0</version>
         </dependency>
     </dependencies>
