@@ -5,6 +5,7 @@ import { logger } from './utils'
 
 export async function main(): Promise<void> {
   clear()
+  
   logger.info(figlet.textSync('beagle-web-grpc', { horizontalLayout: 'fitted' }))
   
   const program = createProgramCLI()
