@@ -10,26 +10,7 @@ jobs:
         name: PR Check
         runs-on: macos-latest
         steps:
-            # Gems for Fastlane
-            -   name: Cache ruby gems dependencies
-                uses: actions/cache@v2
-                env:
-                    keyPath: ${{ runner.os }}-gems
-                with:
-                    path: ~/.gem
-                    key: ${{ env.keyPath }}-${{ hashFiles('Gemfile.lock') }}
-                    restore-keys: ${{ env.keyPath }}
             -   name: Install gem dependencies
                 run: bundle install
-
-            -   name: Cache gradle dependences
-                uses: actions/cache@v2
-                env:
-                    gradle-cache-key: gradle-cache-android
-                    gradle-path: ~/.gradle
-                with:
-                    path: ${{ env.gradle-path }}
-                    key: ${{ runner.os }}-build-${{ env.gradle-cache-key }}-${{ hashFiles('android/buildSrc/**') }}
-                    restore-keys: ${{ runner.os }}-build-${{ env.gradle-cache-key }}
             -   name: Run pr check
                 run: bundle exec fastlane android pull_request_verification
