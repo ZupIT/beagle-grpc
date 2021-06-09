@@ -30,10 +30,10 @@ jobs:
   test-beagle-web-grpc:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Test Web
-      shell: bash
-      working-directory: ./web
-      run: | 
-        yarn
-        yarn test --verbose --coverage
+      - uses: actions/checkout@v2
+      - name: Test Web
+        shell: bash
+        working-directory: ./web
+        run: | 
+          yarn
+          yarn test --verbose --coverage
