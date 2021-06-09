@@ -23,7 +23,7 @@ Gradle example:
 ```
 dependencies { 
     ...
-    implementation("br.com.zup.beagle:grpc-backend:0.0.1")
+    implementation("br.com.zup.beagle:beagle-grpc-backend:1.0.0")
 }
 ```
 
@@ -34,8 +34,8 @@ Maven example:
         ...
         <dependency>
             <groupId>br.com.zup.beagle</groupId>
-            <artifactId>grpc-backend</artifactId>
-            <version>0.0.1</version>
+            <artifactId>beagle-grpc-backend</artifactId>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
 ```

@@ -29,6 +29,20 @@ Deploy current code to production
 
 ----
 
+## backend
+### backend deploy_to_stage
+```
+fastlane backend deploy_to_stage
+```
+Deploy current code to stage
+### backend deploy_to_production
+```
+fastlane backend deploy_to_production
+```
+Deploy current code to production
+
+----
+
 This README.md is auto-generated and will be re-generated every time [fastlane](https://fastlane.tools) is run.
 More information about fastlane can be found on [fastlane.tools](https://fastlane.tools).
 The documentation of fastlane can be found on [docs.fastlane.tools](https://docs.fastlane.tools).
