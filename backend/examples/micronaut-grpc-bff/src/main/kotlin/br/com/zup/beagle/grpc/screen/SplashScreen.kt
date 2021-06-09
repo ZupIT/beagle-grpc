@@ -16,7 +16,7 @@ class SplashScreen(private val headers: Map<String, String>) : ScreenBuilder {
         child = Container(
             children = listOf(
                 Button(
-                    text = "Button with Style, content type: ${this.headers["content-type"]}",
+                    text = "Button with Style and content type: ${this.headers["content-type"]}",
                     onPress = listOf(Navigate.PushView(Route.Remote("text", true)))
                 ).setStyle { margin = EdgeValue(UnitValue(15.0)) },
                 Button(
