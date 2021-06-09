@@ -10,6 +10,7 @@ jobs:
         name: PR Check
         runs-on: macos-latest
         steps:
+            -   uses: actions/checkout@v2
             -   name: Install gem dependencies
                 run: bundle install
             -   name: Run pr check
