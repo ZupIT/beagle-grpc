@@ -5,7 +5,6 @@ import br.com.zup.beagle.grpc.interceptor.BeagleHeadersInterceptor
 import br.com.zup.grpc.BeagleScreenService
 import net.devh.boot.grpc.server.service.GrpcService
 import br.com.zup.beagle.grpc.screen.HomeScreen
-import br.com.zup.beagle.grpc.screen.SplashScreen
 
 @GrpcService(interceptors = [BeagleHeadersInterceptor::class])
 class MyBeagleAppService: BeagleScreenService() {
