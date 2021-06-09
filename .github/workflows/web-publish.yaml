@@ -18,7 +18,10 @@ name: Publish Web
 
 on:
   push:
-    branches: [ master ]
+    branches:
+        - master
+    paths:
+        - 'web/**'
 
 jobs:
   publish:
@@ -53,8 +56,6 @@ jobs:
         run: yarn
 
       - name: setup node
-        shell: bash
-        working-directory: ./web
         if: ${{ env.SHOULD_PUBLISH == 'true' }}
         uses: actions/setup-node@v1
         with:
