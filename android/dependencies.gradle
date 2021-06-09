@@ -67,10 +67,6 @@ junit5.api = "org.junit.jupiter:junit-jupiter-api:$versions.junit5"
 junit5.engine = "org.junit.jupiter:junit-jupiter-engine:$versions.junit5"
 deps.junit5 = junit5
 
-def kotlin = [:]
-kotlin.stdlib = "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin"
-deps.kotlin = kotlin
-
 deps.material = "com.google.android.material:material:$versions.material"
 
 deps.mockk = "io.mockk:mockk:$versions.mockk"
