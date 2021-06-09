@@ -18,8 +18,6 @@ apply plugin: "com.vanniktech.maven.publish"
 
 mavenPublish {
 
-    releaseSigningEnabled = false
-
     nexus {
         stagingProfile = "br.com.zup"
     }
