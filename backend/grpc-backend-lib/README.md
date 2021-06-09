@@ -23,7 +23,7 @@ Gradle example:
 ```
 dependencies { 
     ...
-    implementation("br.com.zup.beagle:grpc-backend:1.0.0")
+    implementation("br.com.zup.beagle:beagle-grpc-backend:1.0.0")
 }
 ```
 
