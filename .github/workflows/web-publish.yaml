@@ -18,7 +18,10 @@ name: Publish Web
 
 on:
   push:
-    branches: [ master ]
+    branches:
+        - master
+    paths:
+        - 'web/**'
 
 jobs:
   publish:
