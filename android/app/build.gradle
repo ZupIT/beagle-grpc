@@ -56,7 +56,6 @@ android {
 }
 
 dependencies {
-    implementation deps.kotlin.stdlib
     implementation deps.core_ktx
     implementation deps.app_compat
     implementation deps.material

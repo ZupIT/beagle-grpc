@@ -16,6 +16,11 @@ or alternatively using `brew install fastlane`
 
 # Available Actions
 ## Android
+### android pull_request_verification
+```
+fastlane android pull_request_verification
+```
+Pull Request verification
 ### android deploy_to_stage
 ```
 fastlane android deploy_to_stage
@@ -30,6 +35,11 @@ Deploy current code to production
 ----
 
 ## backend
+### backend pull_request_verification
+```
+fastlane backend pull_request_verification
+```
+Pull Request verification
 ### backend deploy_to_stage
 ```
 fastlane backend deploy_to_stage

@@ -18,20 +18,27 @@ buildscript {
     ext.kotlin_version = "1.4.32"
     ext.beagle_version = "1.8.1"
     dependencies {
-        classpath "org.jetbrains.dokka:dokka-gradle-plugin:1.4.20"
+        classpath "org.jetbrains.dokka:dokka-gradle-plugin:1.4.30"
         classpath "com.vanniktech:gradle-maven-publish-plugin:0.15.1"
+    }
+
+    repositories {
+        google()
+        mavenCentral()
     }
 }
 
 plugins {
-    id "io.gitlab.arturbosch.detekt" version "1.14.1"
+    id "io.gitlab.arturbosch.detekt" version "1.17.1"
     id "com.github.ben-manes.versions" version "0.39.0"
 }
 
 allprojects {
+
+    apply from: "$rootDir/../detekt.gradle"
+
     repositories {
         google()
-        mavenLocal()
         mavenCentral()
     }
 }

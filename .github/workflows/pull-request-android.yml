@@ -14,26 +14,22 @@
 # limitations under the License.
 #
 
-name: Web Pull Request
+name: Android Pull Request
 
 on:
-  push:
+  pull_request:
     branches:
       - master
     paths:
-      - "web/**"
-  pull_request:
-    paths:
-      - "web/**"
+      - "android/**"
 
 jobs:
-  test-beagle-web-grpc:
-    runs-on: ubuntu-latest
+  pr-verification:
+    name: PR Check
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Test Web
-        shell: bash
-        working-directory: ./web
-        run: |
-          yarn
-          yarn test --verbose --coverage
+      - name: Install gem dependencies
+        run: bundle install
+      - name: Run pr check
+        run: bundle exec fastlane android pull_request_verification
