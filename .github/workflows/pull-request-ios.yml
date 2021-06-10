@@ -2,6 +2,8 @@ name: iOS Pull Request
 
 on:
   pull_request:
+    branches: 
+      - master
     paths:
       - 'ios/**'
 
