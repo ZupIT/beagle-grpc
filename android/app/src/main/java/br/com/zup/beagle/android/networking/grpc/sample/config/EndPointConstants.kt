@@ -16,5 +16,5 @@
 
 package br.com.zup.beagle.android.networking.grpc.sample.config
 
-const val BASE_URL = "http://10.0.2.2:50051"
-const val SAMPLE_ENDPOINT = "/text"
+const val BASE_URL = "http://10.0.2.2:9090"
+const val SAMPLE_ENDPOINT = "/splash"
