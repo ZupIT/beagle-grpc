@@ -17,6 +17,9 @@ jobs:
             -   name: Setup JDK 11
                 run: echo "JAVA_HOME=$JAVA_HOME_11_X64" >> $GITHUB_ENV
 
-            -   name: build check
-                working-directory: backend
-                run: ./gradlew clean check
+            -   uses: actions/checkout@v2
+            -   name: Install gem dependencies
+
+                run: bundle install
+            -   name: Run pr check
+                run: bundle exec fastlane backend pull_request_verification

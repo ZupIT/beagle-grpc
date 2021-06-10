@@ -30,6 +30,11 @@ end
 
 platform :backend do
 
+  desc "Pull Request verification"
+  lane :pull_request_verification do
+    gradle(project_dir: "backend", task: "clean detekt assemble test")
+  end
+
   desc "Deploy current code to stage"
   lane :deploy_to_stage do
     gradle(project_dir: "backend", task: "assemble")

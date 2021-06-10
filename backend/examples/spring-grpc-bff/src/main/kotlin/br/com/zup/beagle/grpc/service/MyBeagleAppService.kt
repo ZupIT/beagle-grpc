@@ -9,6 +9,7 @@ import net.devh.boot.grpc.server.service.GrpcService
 
 @GrpcService(interceptors = [BeagleHeadersInterceptor::class])
 class MyBeagleAppService: BeagleScreenService() {
+
     override fun screens(): Map<String, (String) -> ScreenBuilder> {
         val requestHeaders = BeagleHeadersInterceptor.HEADERS_VALUE.get()
 

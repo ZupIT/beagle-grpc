@@ -35,6 +35,11 @@ Deploy current code to production
 ----
 
 ## backend
+### backend pull_request_verification
+```
+fastlane backend pull_request_verification
+```
+Pull Request verification
 ### backend deploy_to_stage
 ```
 fastlane backend deploy_to_stage

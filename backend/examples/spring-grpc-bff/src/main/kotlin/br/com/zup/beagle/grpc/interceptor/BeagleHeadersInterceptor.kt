@@ -1,6 +1,11 @@
 package br.com.zup.beagle.grpc.interceptor
 
-import io.grpc.*
+import io.grpc.Context
+import io.grpc.Contexts
+import io.grpc.Metadata
+import io.grpc.ServerCall
+import io.grpc.ServerCallHandler
+import io.grpc.ServerInterceptor
 
 class BeagleHeadersInterceptor : ServerInterceptor {
     companion object {
@@ -12,13 +17,19 @@ class BeagleHeadersInterceptor : ServerInterceptor {
         call: ServerCall<ReqT, RespT>?,
         headers: Metadata?,
         next: ServerCallHandler<ReqT, RespT>?
-    ): ServerCall.Listener<ReqT>? {
+    ): ServerCall.Listener<ReqT> {
         var ctx = Context.current()
         ctx = ctx.withValue(HEADERS_VALUE, extractHeaders(headers))
+
         return Contexts.interceptCall(ctx, call, headers, next)
     }
 
     private fun extractHeaders(headers: Metadata?) = headers?.keys()!!.associateWith {
-            headers.get(Metadata.Key.of(it, Metadata.ASCII_STRING_MARSHALLER)) as String
-        }
+        headers.get(
+            Metadata.Key.of(
+                it,
+                Metadata.ASCII_STRING_MARSHALLER
+            )
+        ) as String
+    }
 }

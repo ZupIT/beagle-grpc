@@ -1,6 +1,12 @@
 package br.com.zup.beagle.grpc.interceptor
 
-import io.grpc.*
+import io.grpc.Context
+import io.grpc.Contexts
+import io.grpc.Metadata
+import io.grpc.ServerCall
+import io.grpc.ServerCallHandler
+import io.grpc.ServerInterceptor
+
 import io.micronaut.core.order.Ordered
 import javax.inject.Singleton
 
