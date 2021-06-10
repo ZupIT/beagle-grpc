@@ -29,6 +29,5 @@ jacocoAndroidUnitTestReport {
 }
 
 tasks.withType(Test) {
-    useJUnitPlatform()
     jacoco.includeNoLocationClasses = true
 }
