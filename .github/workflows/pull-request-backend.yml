@@ -17,21 +17,21 @@
 name: Backend Pull Request
 
 on:
-    pull_request:
-        branches:
-            - master
-        paths:
-            - "backend/**"
+  pull_request:
+    branches:
+      - master
+    paths:
+      - "backend/**"
 
 jobs:
-    pr-verification:
-        name: PR Check
-        runs-on: macos-latest
-        steps:
-            - uses: actions/checkout@v2
-            - name: Setup JDK 11
-            - run: echo "JAVA_HOME=$JAVA_HOME_11_X64" >> $GITHUB_ENV
-            - name: Install gem dependencies
-            - run: bundle install
-            - name: Run pr check
-            - run: bundle exec fastlane backend pull_request_verification
+  pr-verification:
+    name: PR Check
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup JDK 11
+        run: echo "JAVA_HOME=$JAVA_HOME_11_X64" >> $GITHUB_ENV
+      - name: Install gem dependencies
+        run: bundle install
+      - name: Run pr check
+        run: bundle exec fastlane backend pull_request_verification
