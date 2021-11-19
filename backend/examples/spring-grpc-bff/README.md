@@ -1,18 +1,16 @@
-# BFF: Spring Boot gRPC Application
+# **BFF: Spring Boot gRPC Application**
 
 ## This is a BFF example using Beagle gRPC library for backend developers
 
-### How to execute?
+### **How to execute?**
+### **Requirements**
+- Open JDK 8+
 
-- Requirements:
-    - Open JDK 8+
+Now, just open your terminal at the root of the project and run **`./gradlew run`**
 
+That's it! The application will be up at localhost:50051.
 
-- Now, just open your terminal at the root of the project and run ./gradlew run
-
-That's it! The application will be up at localhost:50051, enjoy it!
-
-### Services available:
+### **Services available:**
 
 - ScreenService
   - method: getScreen

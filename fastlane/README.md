@@ -1,51 +1,51 @@
-fastlane documentation
-================
-# Installation
+# **Fastlane documentation**
 
-Make sure you have the latest version of the Xcode command line tools installed:
+## **Installation**
+
+Make sure you have the latest version of the Xcode command line tools installed and run:
 
 ```
 xcode-select --install
 ```
 
-Install _fastlane_ using
+Install _fastlane_ using:
+
 ```
 [sudo] gem install fastlane -NV
 ```
-or alternatively using `brew install fastlane`
+> You can also use **`brew install fastlane`**
 
-# Available Actions
-## Android
-### android pull_request_verification
+## **Available Actions**
+### **Android**
+### **android pull_request_verification**
 ```
 fastlane android pull_request_verification
 ```
 Pull Request verification
-### android deploy_to_stage
+
+### **android deploy_to_stage**
 ```
 fastlane android deploy_to_stage
 ```
 Deploy current code to stage
-### android deploy_to_production
+### **android deploy_to_production**
 ```
 fastlane android deploy_to_production
 ```
 Deploy current code to production
 
-----
-
-## backend
-### backend pull_request_verification
+## **Backend**
+### **backend pull_request_verification**
 ```
 fastlane backend pull_request_verification
 ```
 Pull Request verification
-### backend deploy_to_stage
+### **backend deploy_to_stage**
 ```
 fastlane backend deploy_to_stage
 ```
 Deploy current code to stage
-### backend deploy_to_production
+### **backend deploy_to_production**
 ```
 fastlane backend deploy_to_production
 ```
